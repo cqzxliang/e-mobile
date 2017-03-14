@@ -1,0 +1,24 @@
+page-message {
+    .list-avatar-page {
+        ion-note {
+            font-size: 12px;
+            align-self: flex-start;
+            margin-top: 14px;
+        }
+        .img-header {
+            width: 56px;
+            height: 56px;
+            margin: 8px 16px 8px 0;
+            .img {
+                width: 56px;
+                height: 56px;
+            }
+        }
+        .name {
+            font-size: 16px;
+            display: inline-block;
+            top: 0;
+            padding: 0px 0px 8px 0px;
+        }
+    }
+}

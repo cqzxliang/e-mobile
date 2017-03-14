@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>{{name}}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div *ngFor="let item of list">
+        <div class="msgarea">
+            <div [ngClass]="item.from === nameid ? ' other' : ' me'">
+                <img class="icon" src={{item.src}}>
+                <div class="msg">
+                    <span [ngClass]="item.from === nameid ? ' arrow_l_int' : ' arrow_r_int'"></span>
+                    <span [ngClass]="item.from === nameid ? ' arrow_l_out' : ' arrow_r_out'"></span> {{item.content}}
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div class="input">
+        <div class="input_layout">
+            <img class="input_icon voice" src="assets/img/voice.png">
+            <img class="input_icon face" src="assets/img/face.png">
+            <img class="input_icon plus" src="assets/img/plus.png">
+            <input class="input_text" [(ngModel)]="input_text" name="input_text">
+            <div [hidden]="isEmpty()" class="send" (click)="sendMessage()" tappable>發送</div>
+        </div>
+    </div>
+</ion-content>
