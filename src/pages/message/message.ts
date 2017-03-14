@@ -17,7 +17,6 @@ import { MyRouter } from '../../router/router';
 export class MessagePage {
     messagelsititem;
     userinfo;
-    userinfotest;
     router: MyRouter = new MyRouter();
 
 
