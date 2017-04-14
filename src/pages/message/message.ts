@@ -43,7 +43,7 @@ export class MessagePage {
         this.dataService.getMessageHistory().then((res => {
             this.messagelsititem = res;
         }))
-
+         console.log(this.messagelsititem );
     };
 
 

@@ -133,11 +133,13 @@ export class DataService {
                 let pmsg = sorted.filter((msg) => msg.id === v.id);
                 let lastmsg = pmsg.length ? pmsg[0].content : '';
                 let type = pmsg[0].type;
+                let msgtype= pmsg[0].msgtype;
                 let timedesc = this.getDateDiff(pmsg[0].time);
                 rst.push({
                     nameid: v.nameid,
                     lastmsg: lastmsg,
                     type: type,
+                    msgtype:msgtype,
                     timedesc: timedesc
                 });
             });
@@ -326,6 +328,7 @@ export class DataService {
         "to": "mahuateng",
         "from": "Woody",
         "content": "小马哥，我穷",
+        "msgtype": "text",
         "time": 1480338091398,
         "type": "dialogue"
     }, {
@@ -333,13 +336,15 @@ export class DataService {
         "to": "Woody",
         "from": "mahuateng",
         "content": "300股，接着。",
-        "time": 1488511832189,
+        "msgtype": "text",
+        "time": 1480338091399,
         "type": "dialogue"
     }, {
         "id": 3,
         "to": "dinglei",
         "from": "Woody",
         "content": "为什么你们家的猪那么贵。",
+        "msgtype": "text",
         "time": 1480338091397,
         "type": "dialogue"
     }
@@ -348,6 +353,7 @@ export class DataService {
         "to": "Woody",
         "from": "dinglei",
         "content": "因为他会飞。",
+        "msgtype": "text",
         "time": 1488425432189,
         "type": "dialogue"
     }
@@ -356,6 +362,7 @@ export class DataService {
         "to": "mayun",
         "from": "Woody",
         "content": "支付鸨，挺好。",
+        "msgtype": "text",
         "time": 1480338091394,
         "type": "dialogue"
     }, {
@@ -363,6 +370,7 @@ export class DataService {
         "to": "Woody",
         "from": "mayun",
         "content": "你懂的，嘿嘿。",
+        "msgtype": "text",
         "time": 1480338091395,
         "type": "dialogue"
     }
@@ -371,6 +379,7 @@ export class DataService {
         "to": "Woody",
         "from": "Slinky Dog",
         "content": "You heard of Kung Fu? Well get ready for pork chop. ",
+        "msgtype": "text",
         "time": 1480338091393,
         "type": "notice",
     },
@@ -379,6 +388,7 @@ export class DataService {
         "to": "Woody",
         "from": "Slinky Dog",
         "content": "I may not be a smart dog, but I know what roadkill is.",
+        "msgtype": "text",
         "time": 1480338091392,
         "type": "notice"
     }
@@ -387,6 +397,7 @@ export class DataService {
         "to": "Woody",
         "from": "Barbie",
         "content": "So, who's ready for Ken's dream tour?",
+        "msgtype": "text",
         "time": 1480338091391,
         "type": "notice"
     },
@@ -395,6 +406,7 @@ export class DataService {
         "to": "Woody",
         "from": "Squeeze",
         "content": "The claw is our master.",
+        "msgtype": "text",
         "time": 1480338091390,
         "type": "notice"
     },
@@ -403,6 +415,7 @@ export class DataService {
         "to": "Woody",
         "from": "Squeeze",
         "content": "The claw is our master.",
+        "msgtype": "text",
         "time": 1480338091390,
         "type": "notice"
     }, {
@@ -410,7 +423,128 @@ export class DataService {
         "to": "mayun",
         "from": "mahuateng",
         "content": "300股，接着。",
+        "msgtype": "text",
         "time": 1480338091400,
+        "type": "dialogue"
+    },{
+        "id": 21,
+        "to": "mahuateng",
+        "from": "Woody",
+        "content": "小马哥，我穷",
+        "msgtype": "text",
+        "time": 1480338091401,
+        "type": "dialogue"
+    }, {
+        "id": 22,
+        "to": "Woody",
+        "from": "mahuateng",
+        "content": "300股，接着。",
+        "msgtype": "text",
+        "time": 1480338091402,
+        "type": "dialogue"
+    },{
+        "id": 23,
+        "to": "mahuateng",
+        "from": "Woody",
+        "content": "小马哥，我穷",
+        "msgtype": "text",
+        "time": 1480338091403,
+        "type": "dialogue"
+    }, {
+        "id": 24,
+        "to": "Woody",
+        "from": "mahuateng",
+        "content": "300股，接着。",
+        "msgtype": "text",
+        "time": 1480338091404,
+        "type": "dialogue"
+    },{
+        "id": 25,
+        "to": "mahuateng",
+        "from": "Woody",
+        "content": "小马哥，我穷",
+        "msgtype": "text",
+        "time": 1480338091406,
+        "type": "dialogue"
+    }, {
+        "id": 26,
+        "to": "Woody",
+        "from": "mahuateng",
+        "content": "300股，接着。",
+        "msgtype": "text",
+        "time": 1480338091407,
+        "type": "dialogue"
+    },{
+        "id": 27,
+        "to": "mahuateng",
+        "from": "Woody",
+        "content": "小马哥，我穷",
+        "msgtype": "text",
+        "time": 1480338091408,
+        "type": "dialogue"
+    }, {
+        "id": 28,
+        "to": "Woody",
+        "from": "mahuateng",
+        "content": "300股，接着。",
+        "msgtype": "text",
+        "time": 1480338091409,
+        "type": "dialogue"
+    },{
+        "id": 29,
+        "to": "mahuateng",
+        "from": "Woody",
+        "content": "小马哥，我穷",
+        "msgtype": "text",
+        "time": 1480338091410,
+        "type": "dialogue"
+    }, {
+        "id": 30,
+        "to": "Woody",
+        "from": "mahuateng",
+        "content": "300股，接着。",
+        "msgtype": "text",
+        "time": 1480338091411,
+        "type": "dialogue"
+    },{
+        "id": 31,
+        "to": "mahuateng",
+        "from": "Woody",
+        "content": "小马哥，我穷",
+        "msgtype": "text",
+        "time": 1480338091412,
+        "type": "dialogue"
+    }, {
+        "id": 32,
+        "to": "Woody",
+        "from": "mahuateng",
+        "content": "300股，接着。",
+        "msgtype": "text",
+        "time": 1480338091413,
+        "type": "dialogue"
+    },{
+        "id": 33,
+        "to": "mahuateng",
+        "from": "Woody",
+        "content": "小马哥，我穷",
+        "msgtype": "text",
+        "time": 1480338091414,
+        "type": "dialogue"
+    }, {
+        "id": 34,
+        "to": "Woody",
+        "from": "mahuateng",
+        "content": "assets/img/avatar-ts-woody.png",
+        "msgtype": "img",
+        "time": 1480338091415,
+        "type": "dialogue"
+    }, {
+        "id": 35,
+        "to": "mahuateng",
+        "from": "Woody",
+        "content": "assets/img/avatar-ts-woody.png",
+        "msgtype": "img",
+        "time": 1480338091416,
         "type": "dialogue"
     }];
 
